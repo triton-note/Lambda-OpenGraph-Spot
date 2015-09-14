@@ -1,0 +1,10 @@
+@import "font";
+
+div#gmap {
+  width: 400px;
+  height: 400px;
+}
+
+a.app {
+  @include font-normal(16px);
+}
