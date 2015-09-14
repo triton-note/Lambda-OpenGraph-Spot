@@ -14,10 +14,13 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
         <script src="https://maps.google.com/maps/api/js?sensor=true&key=AIzaSyCHAlmtfOf6e2SPuOzAhsu-dIZOxctGNlY" type="text/javascript"></script>
+        
+        <link href='https://fonts.googleapis.com/css?family=Exo+2:100italic,600,200,300,400,800italic|Roboto+Mono:300' rel='stylesheet' type='text/css'>
+        
     </head>
     
     <body>
-        <a href="http://maps.apple.com/?q=$result.spot.geoinfo.latitude, $result.spot.geoinfo.longitude">Open App</a>
+        <a class="app" href="http://maps.apple.com/?q=$result.spot.geoinfo.latitude, $result.spot.geoinfo.longitude">Open App</a>
         <div id="gmap"></div>
         <script type="text/javascript">
         var pos = new google.maps.LatLng($result.spot.geoinfo.latitude, $result.spot.geoinfo.longitude);
