@@ -7,7 +7,7 @@
         
         <meta property="fb:app_id" content="$result.info.appId" />
         <meta property="og:type" content="place" />
-        <meta property="og:url" content="https://api.fathens.org/triton-note/open_graph/spot/$util.urlEncode($result.info_base64)" />
+        <meta property="og:url" content="$result.info.url/$util.urlEncode($result.info_base64)" />
         <meta property="og:title" content="$result.spot.title" />
         <meta property="place:location:latitude" content="$result.spot.geoinfo.latitude" />
         <meta property="place:location:longitude" content="$result.spot.geoinfo.longitude" />
